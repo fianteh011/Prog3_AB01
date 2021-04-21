@@ -12,7 +12,7 @@ public class Main {
         SimpleAudioPlayerAdapter player = new SimpleAudioPlayerAdapter();
 
         //set ton aus
-        player.tonAus();
+        //player.tonAus();
 
         //play one_time song
         player.einmaligAbspielen(url);
