@@ -1,6 +1,8 @@
-package de.hsos.prog3.team5.ab1.orchester;
+package de.hsos.prog3.team5.ab1.ausgelagert;
 
 import de.hsos.prog3.team5.ab1.audio.adapter.SimpleAudioPlayerAdapter;
+import de.hsos.prog3.team5.ab1.orchester.Orchester;
+import de.hsos.prog3.team5.ab1.orchester.Verhalten;
 
 import java.io.IOException;
 import java.net.URL;
