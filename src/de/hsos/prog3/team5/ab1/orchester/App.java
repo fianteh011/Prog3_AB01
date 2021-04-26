@@ -3,9 +3,8 @@ package de.hsos.prog3.team5.ab1.orchester;
 
 import java.io.IOException;
 
-public class Main {
+public class App {
         public static void main(String[] args) {
-                // write your code here
                 String audioDatei = "/All_Together.wav";
                 Orchester orchester = new Orchester("HSOS Titty Twister Orchestra", audioDatei);
 
@@ -21,6 +20,12 @@ public class Main {
                 orchester.addMusikerIn(drum);
 
                 orchester.proben(orchester);
+                try {
+                        orchester.spielen();
+                } catch (IOException e) {
+                        e.printStackTrace();
+                }
+
                 orchester.auftreten(orchester);
 
                 try {

@@ -1,7 +1,10 @@
-package de.hsos.prog3.team5.ab1.orchester;
+package de.hsos.prog3.team5.ab1.ausgelagert;
 
 import de.hsos.prog3.team5.ab1.audio.StdAudioPlayer;
 import de.hsos.prog3.team5.ab1.audio.adapter.SimpleAudioPlayerAdapter;
+import de.hsos.prog3.team5.ab1.orchester.MusikerIn;
+import de.hsos.prog3.team5.ab1.orchester.Orchester;
+import de.hsos.prog3.team5.ab1.orchester.Verhalten;
 
 import java.io.IOException;
 import java.net.URL;
@@ -14,12 +17,12 @@ public class Probe implements Verhalten {
     public void spielen(Orchester orchester) throws IOException {
         HashSet<MusikerIn> musikerInnen = orchester.getMusikerInnen();
 
-        Iterator value = musikerInnen.iterator();
+        Iterator<MusikerIn> value = musikerInnen.iterator();
 
         while(value.hasNext()){
 
             try {
-                MusikerIn tmp = (MusikerIn) value.next();
+                MusikerIn tmp = value.next();
                 String audio = tmp.getInstrument().getAudiodatei();
                 URL url = Probe.class.getResource(audio);
                 StdAudioPlayer player = new SimpleAudioPlayerAdapter();
