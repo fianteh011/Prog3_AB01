@@ -93,6 +93,7 @@ public class Orchester {
     - wird sowieso von keiner anderen Klasse gebraucht, also fehlende Sichtbarkeit von außen
     kein Problem
     - weniger Methodenaufruf, sondern direkte Zugriffe auf Objektvariablen vom Orchester (Vorteil?)
+    - spart Zeit
 
     Nachteile innere Klasse:
     - Falls wir nochmal andere "Orchester" (Kapelle, Kammerorchester,...) haben wollen,
